@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: #111;
+}
+body{
+    width: 100%;
+    font-family: manrope;
+    padding-top: 70px;
+}
+*::selection{
+    background: #111;
+    color: #fff;
+}
+a{
+    color: #111;
+}
+li{
+    list-style-type: none;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 clamp(20px, calc((100% - 1200px) / 2),calc((100% - 1200px) / 2));
+    border-bottom: 1px solid #111;
+    z-index: 99999;
+    background: #fff;
+}
+nav img{
+    width: 30px;
+    object-fit: cover;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+nav ul a{
+    font-size: 14px;
+}
+
+.nd-list span{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+header{
+    padding: 100px clamp(20px, calc((100% - 1200px) / 2),calc((100% - 1200px) / 2)) 30px;
+    border-bottom: 1px solid #111;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+header .subtitle{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+header .bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header .bottom .bottom-left{
+    display: flex;
+    gap: 30px;
+}
+header .bottom .social-link{
+    display: flex;
+    gap: 10px;
+}
+header .bottom .nd-list p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sect1{
+    padding: 0 clamp(20px, calc((100% - 1200px) / 2),calc((100% - 1200px) / 2));
+    border-bottom: 1px solid #111;
+    display: flex;
+}
+.sect1 .left{
+    border-right: 1px solid #111;
+    padding: 0 30px 100px 0;
+    width: 40%;
+}
+.sect1 .left h2{
+    padding-top: 100px;
+    font-size: 28px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+.sect1 .left h2 span{
+    color: #2E5CCF;
+}
+.sect1 .right{
+    width: 60%;
+    padding: 100px 0 100px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sect1 .right img{
+    aspect-ratio: 1 / 0.6;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.sect2{
+    padding: 100px clamp(20px, calc((100% - 1200px) / 2),calc((100% - 1200px) / 2));
+    border-bottom: 1px solid #111;
+}
+.sect2 h2{
+    margin-bottom: 50px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.sect2 .service-list{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.sect2 .service-list .service-con{
+    border-bottom: 1px solid #111;
+    padding-bottom: 20px;
+}
+.sect2 .service-list .service-con h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.sect2 .service-list .service-con p{
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+.sect2 .service-list .service-con span{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer{
+    padding: 50px clamp(20px, calc((100% - 1200px) / 2),calc((100% - 1200px) / 2)) 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
+footer .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+footer .left img{
+    width: 100px;
+    object-fit: cover;
+}
+footer .left .wrap-menu{
+    display: flex;
+    gap: 30px;
+}
+footer .left ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer .left ul a{
+    font-weight: 500;
+    font-size: 16px;
+}
+footer .right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+footer .nd-list p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 800px) {
+    h2{
+        font-size: 24px;
+    }
+    .sect1{
+        flex-direction: column;
+    }
+    .sect1 .left,.sect1 .right{
+        width: 100%;
+        border: none;
+    }
+    .sect1 .left{
+        padding-bottom: 30px;
+    }
+    .sect1 .right{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .sect1 h2{
+        position: relative;
+    }
+    .sect2 .service-list .service-con h3{
+        font-size: 20px;
+    }
+    .sect2 .service-list .service-con p, .sect2 .service-list .service-con span{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    header h1{
+        font-size: 40px;
+    }
+    .bottom-right{
+        display: none;
+    }
+    footer .left{
+        flex-direction: column;
+    }
+}
